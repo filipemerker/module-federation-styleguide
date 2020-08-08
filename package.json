@@ -15,8 +15,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode production",
-    "serve": "serve dist -p 3006",
-    "clean": "rm -rf dist"
+    "serve": "serve docs -p 3006",
+    "clean": "rm -rf docs"
   },
   "dependencies": {
     "react": "^16.13.0",
