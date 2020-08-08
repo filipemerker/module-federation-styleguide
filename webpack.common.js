@@ -1,18 +1,8 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ModuleFederationPlugin } = require('webpack').container;
-const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { ModuleFederationPlugin } = require('webpack').container
 
 module.exports = {
   entry: './src/index',
-  mode: 'development',
-  devServer: {
-    contentBase: path.join(__dirname, 'docs'),
-    port: 3006,
-  },
-  output: {
-    publicPath: 'http://localhost:3006/',
-    path: path.join(__dirname, 'docs')
-  },
   module: {
     rules: [
       {
@@ -39,4 +29,4 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
-};
+}

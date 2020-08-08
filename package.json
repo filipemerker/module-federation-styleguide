@@ -10,11 +10,12 @@
     "serve": "11.3.2",
     "webpack": "5.0.0-beta.18",
     "webpack-cli": "3.3.11",
-    "webpack-dev-server": "3.11.0"
+    "webpack-dev-server": "3.11.0",
+    "webpack-merge": "^5.1.1"
   },
   "scripts": {
-    "start": "webpack-dev-server",
-    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "serve": "serve docs -p 3006",
     "clean": "rm -rf docs"
   },
